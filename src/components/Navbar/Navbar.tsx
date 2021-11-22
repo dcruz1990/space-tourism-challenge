@@ -23,13 +23,13 @@ const Navbar = () => {
   ];
   console.log(items);
   return (
-    <div className=" flex justify-end items-center ">
+    <div className=" flex justify-end items-center backdrop-filter backdrop-blur-lg">
       <img src={logo} alt="Logo" className="mr-auto" />
       {items.map((item) => {
         <NavbarButton title={item.title} order={item.index} />;
       })}
       <Spacer />
-      <NavbarButton title="Home" order="00" />
+      <NavbarButton title="Home" order="00" active={true} />
       <NavbarButton title="Destination" order="01" />
       <NavbarButton title="Crew" order="02" />
       <NavbarButton title="Technology" order="03" />

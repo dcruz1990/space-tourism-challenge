@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 export const App = () => {
   return (
-    <div>
+    <div className="max-h-screen">
       <Navbar />
       <div className="w-9/12 mt-96 flex justify-between">
         <div className="ml-10">
