@@ -4,8 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url(./fonts/Roboto-Regular.ttf) format("ttf");
+} */
+
 @layer base {
   body {
-    @apply text-ffffff font-bellafair bg-mobileBackground md:bg-tabletBackground lg:bg-desktopBackground bg-cover bg-no-repeat text-base;
+    @apply my-10 mx-14 text-ffffff font-bellefair bg-mobileBackground md:bg-tabletBackground lg:bg-desktopBackground bg-cover bg-repeat text-base;
   }
 }

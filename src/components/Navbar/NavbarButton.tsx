@@ -5,8 +5,8 @@ interface props {
 }
 export const NavbarButton = ({ title, active, order }: props) => {
   return (
-    <div className="h-7 uppercase px-5 ">
-      {order} {title}
+    <div className="h-7 uppercase px-5 text-menuElement ">
+      <b> {order}</b> {title}
     </div>
   );
 };

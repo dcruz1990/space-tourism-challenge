@@ -11,7 +11,8 @@ module.exports = {
         mobileBackground: "url('assets/home/background-home-mobile.jpg')",
       },
       fontFamily: {
-        bellafair: ["Bellafair"],
+        bellefair: ["Bellefair"],
+        barlot: ["Barlow Condensed"],
       },
       colors: {
         primary: "#0B0D17",
@@ -20,6 +21,9 @@ module.exports = {
       },
       fontSize: {
         heading1: "150px",
+        heading5: "28px",
+        menuElement: "18px",
+        bodyText: "18px",
       },
       width: {
         48: "48px",
