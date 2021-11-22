@@ -5,6 +5,7 @@ export const App = () => {
   return (
     <div>
       <Navbar />
+      <div className="text-ffffff">Body</div>
     </div>
   );
 };

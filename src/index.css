@@ -6,6 +6,6 @@
 
 @layer base {
   body {
-    @apply font-bellafair bg-mobileBackground md:bg-tabletBackground lg:bg-desktopBackground bg-cover bg-no-repeat text-base;
+    @apply text-ffffff font-bellafair bg-mobileBackground md:bg-tabletBackground lg:bg-desktopBackground bg-cover bg-no-repeat text-base;
   }
 }

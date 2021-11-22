@@ -18,6 +18,12 @@ module.exports = {
         secondary: "#D0D6F9",
         ffffff: "#FFFFFF",
       },
+      fontSize: {
+        heading1: "150px",
+      },
+      width: {
+        48: "48px",
+      },
     },
   },
   variants: {
