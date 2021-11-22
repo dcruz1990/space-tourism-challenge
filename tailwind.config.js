@@ -1,11 +1,27 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
-  purge: [],
+  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        desktopBackground: "url('assets/home/background-home-desktop.jpg')",
+        tabletBackground: "url('assets/home/background-home-tablet.jpg')",
+        mobileBackground: "url('assets/home/background-home-mobile.jpg')",
+      },
+      fontFamily: {
+        bellafair: ["Bellafair"],
+      },
+      colors: {
+        primary: "#0B0D17",
+        secondary: "#D0D6F9",
+        ffffff: "#FFFFFF",
+      },
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};
