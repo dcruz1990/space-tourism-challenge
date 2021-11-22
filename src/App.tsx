@@ -5,8 +5,8 @@ export const App = () => {
   return (
     <div>
       <Navbar />
-      <div className="w-9/12 mt-96 flex">
-        <div className="ml-auto">
+      <div className="w-9/12 mt-96 flex justify-between">
+        <div className="ml-10">
           <h3 className="uppercase font-barlot text-heading5 text-secondary leading-35 tracking-widest">
             So, you want to travel to space
           </h3>
@@ -20,7 +20,12 @@ export const App = () => {
             world experience!
           </p>
         </div>
-        <div id="button"></div>
+        <div
+          id="button"
+          className="bg-ffffff text-black text-heading5 cursor-pointer hover:border-white border-10 hover:border-8 rounded-full w-80 h-80 uppercase flex items-center justify-center"
+        >
+          <p className="bottom-2 left-0">Explore</p>
+        </div>
       </div>
     </div>
   );
