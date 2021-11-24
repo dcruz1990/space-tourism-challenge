@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 
 export const App = () => {
@@ -22,9 +21,14 @@ export const App = () => {
         </div>
         <div
           id="button"
-          className="bg-ffffff text-black text-heading5 cursor-pointer hover:border-white border-10 hover:border-8 rounded-full w-80 h-80 uppercase flex items-center justify-center"
+          className="bg-secondary rounded-full w-80 h-80 flex items-center justify-center "
         >
-          <p className="bottom-2 left-0">Explore</p>
+          <div
+            id="button"
+            className="bg-ffffff text-black text-heading5 uppercase  cursor-pointer hover:border-white border-10 hover:border-8 rounded-full w-60 h-60 absolute flex justify-center items-center "
+          >
+            <p className="bottom-2 left-0">Explore</p>
+          </div>
         </div>
       </div>
     </div>

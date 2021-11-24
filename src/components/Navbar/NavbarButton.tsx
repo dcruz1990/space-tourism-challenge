@@ -2,6 +2,7 @@ interface props {
   title: string;
   active?: boolean;
   order?: string;
+ 
 }
 export const NavbarButton = ({ title, active, order }: props) => {
   return (

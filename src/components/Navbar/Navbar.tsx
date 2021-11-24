@@ -3,7 +3,7 @@ import Spacer from "../common/Spacer";
 import NavbarButton from "./NavbarButton";
 
 const Navbar = () => {
-  let items = [
+  const items = [
     {
       index: "00",
       title: "Home",
@@ -21,18 +21,13 @@ const Navbar = () => {
       title: "Teechnology",
     },
   ];
-  console.log(items);
   return (
     <div className=" flex justify-end items-center backdrop-filter backdrop-blur-lg">
       <img src={logo} alt="Logo" className="mr-auto" />
-      {items.map((item) => {
-        <NavbarButton title={item.title} order={item.index} />;
-      })}
       <Spacer />
-      <NavbarButton title="Home" order="00" active={true} />
-      <NavbarButton title="Destination" order="01" />
-      <NavbarButton title="Crew" order="02" />
-      <NavbarButton title="Technology" order="03" />
+      {items.map((item) => (
+        <NavbarButton title={item.title} order={item.index} key={item.title} />
+      ))}
     </div>
   );
 };
