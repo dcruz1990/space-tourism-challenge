@@ -22,7 +22,7 @@ export const NavbarButton = ({
       }  `}
       to={to}
     >
-      <b> {position}</b> {title}
+      <b className="invisible lg:visible"> {position}</b> {title}
     </Link>
   );
 };

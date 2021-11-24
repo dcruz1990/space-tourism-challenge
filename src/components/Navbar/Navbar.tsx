@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <div className=" flex justify-end items-center backdrop-filter backdrop-blur-lg">
-      <img src={logo} alt="Logo" className="mr-auto" />
+      <img src={logo} alt="Logo" className="hidden md:block mr-auto" />
       <Spacer />
       {items.map((item) => (
         <NavbarButton
