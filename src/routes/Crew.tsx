@@ -1,11 +1,13 @@
 import Navbar from "../components/Navbar/Navbar";
 
 const Crew = () => {
-    return (
-        <><Navbar /><main style={{ padding: "1rem 0" }}>
-            <h2>Crew</h2>
-        </main></>
-    );
-  }
+  return (
+    <div className="w-full h-screen bg-crewMobileBackground md:bg-crewTabletBackground lg:bg-crewDesktopBackground  bg-cover">
+      <div className="py-10 px-20">
+        <Navbar />
+      </div>
+    </div>
+  );
+};
 
-  export default Crew
+export default Crew;

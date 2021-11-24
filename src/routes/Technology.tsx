@@ -1,11 +1,13 @@
 import Navbar from "../components/Navbar/Navbar";
 
 const Technology = () => {
-    return (
-        <><Navbar /><main style={{ padding: "1rem 0" }}>
-            <h2>Crew</h2>
-        </main></>
-    );
-  }
+  return (
+    <div className="w-full h-screen bg-technologyMobileBackground md:bg-technologyTabletBackground lg:bg-technologyDesktopBackground  bg-cover">
+      <div className="py-10 px-20">
+        <Navbar />
+      </div>
+    </div>
+  );
+};
 
-  export default Technology
+export default Technology;
