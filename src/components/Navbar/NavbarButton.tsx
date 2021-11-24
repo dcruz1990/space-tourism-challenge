@@ -1,13 +1,6 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import type { LinkProps } from "react-router-dom";
 
-interface props {
-  title: string;
-  active?: boolean;
-  order?: string;
-  link?: string;
-}
-
 // extend LinkProps to add position prop
 type LinkPropsWithPosition = LinkProps & {
   position?: string;
