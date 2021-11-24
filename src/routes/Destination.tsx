@@ -1,11 +1,9 @@
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 
-
-export const App = () => {
+const Destination = () => {
   return (
-    <div className="max-h-screen">
+    <>
       <Navbar />
-   
       <div className="w-9/12 mt-96 flex justify-between">
         <div className="ml-10">
           <h3 className="uppercase font-barlot text-heading5 text-secondary leading-35 tracking-widest">
@@ -29,10 +27,14 @@ export const App = () => {
             id="button"
             className="bg-ffffff   cursor-pointer hover:border-white border-2 hover:border-8 rounded-full w-60 h-60 absolute flex justify-center items-center hover:shadow-2xl"
           >
-            <p className="bottom-2 left-0 text-black text-heading5 uppercase">Explore</p>
+            <p className="bottom-2 left-0 text-black text-heading5 uppercase">
+              Explore
+            </p>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
+
+export default Destination;
