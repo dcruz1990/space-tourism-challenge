@@ -10,12 +10,12 @@ import Technology from "./routes/Technology";
 
 ReactDOM.render(
   <BrowserRouter>
-  <Routes>
-    <Route path="/" element={<App />} />
-    <Route path="/crew" element={<Crew />} />
-    <Route path="/destination" element={<Destination />} />
-    <Route path="/technology" element={<Technology />} />
-  </Routes>
-</BrowserRouter>,
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/crew" element={<Crew />} />
+      <Route path="/destination" element={<Destination />} />
+      <Route path="/technology" element={<Technology />} />
+    </Routes>
+  </BrowserRouter>,
   document.getElementById("root")
 );

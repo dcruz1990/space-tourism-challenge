@@ -2,36 +2,41 @@ import logo from "../../assets/shared/logo.svg";
 import Spacer from "../common/Spacer";
 import NavbarButton from "./NavbarButton";
 
-
 const Navbar = () => {
   const items = [
     {
-      index: "00",
+      position: "00",
       title: "Home",
-      link: "/"
+      link: "/",
     },
     {
-      index: "01",
+      position: "01",
       title: "Destination",
-      link: "/destination"
+      link: "/destination",
     },
     {
-      index: "02",
+      position: "02",
       title: "Crew",
-      link: "/crew"
+      link: "/crew",
     },
     {
-      index: "03",
+      position: "03",
       title: "Teechnology",
-      link: "/technology"
+      link: "/technology",
     },
   ];
+
   return (
     <div className=" flex justify-end items-center backdrop-filter backdrop-blur-lg">
       <img src={logo} alt="Logo" className="mr-auto" />
       <Spacer />
       {items.map((item) => (
-        <NavbarButton title={item.title} order={item.index} key={item.title} link={item.link} />
+        <NavbarButton
+          title={item.title}
+          key={item.title}
+          to={item.link}
+          position={item.position}
+        />
       ))}
     </div>
   );

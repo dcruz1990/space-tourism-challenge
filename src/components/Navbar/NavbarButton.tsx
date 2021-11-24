@@ -1,21 +1,35 @@
-import { Link } from "react-router-dom";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import type { LinkProps } from "react-router-dom";
 
 interface props {
   title: string;
   active?: boolean;
   order?: string;
   link?: string;
- 
 }
-export const NavbarButton = ({ title, active, order, link }: props) => {
+
+// extend LinkProps to add position prop
+type LinkPropsWithPosition = LinkProps & {
+  position?: string;
+};
+
+export const NavbarButton = ({
+  children,
+  to,
+  title,
+  position,
+  ...props
+}: LinkPropsWithPosition) => {
+  let resolved = useResolvedPath(to);
+  let match = useMatch({ path: resolved.pathname, end: true });
   return (
     <Link
       className={`p-5 uppercase border-opacity-0 hover:border-secondary hover:border-opacity-100 border-b-2 text-menuElement cursor-pointer ${
-        active ? `border-b-8 border-opacity-100 border-ffffff` : false
+        match ? `border-b-4 border-opacity-100 border-ffffff` : false
       }  `}
-      to={link as string}
+      to={to}
     >
-      <b> {order}</b> {title}
+      <b> {position}</b> {title}
     </Link>
   );
 };
