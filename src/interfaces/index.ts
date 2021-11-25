@@ -6,4 +6,5 @@ export interface IPlanet {
         png: string;
         webp: string;
     }
+    travel: string;
 }
